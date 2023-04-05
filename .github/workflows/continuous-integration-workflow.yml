@@ -16,3 +16,10 @@ jobs:
 
     - name: Test C# 
       run: dotnet test
+
+    - name: typescript
+      working-directory: DotnetTemplate.Web
+      run: |
+        npm run build
+        npm run lint
+        npm t
