@@ -7,3 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+
+    - name: Hello World
+      run: echo 'Hello World'
+    
+    - name: Build C# 
+      run: dotnet build
+
+    - name: Test C# 
+      run: dotnet test
